@@ -9,6 +9,7 @@ import {
   Dimensions,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -46,6 +47,7 @@ const HomeScreen = () => {
               paddingHorizontal: windowWidth * 0.05,
             }}
           >
+            <StatusBar style="dark"/>
             <Text style={{ fontSize: windowWidth * 0.08, fontWeight: 'bold', color: '#333' }}>
               Fast & Delicious Food
             </Text>
@@ -67,7 +69,7 @@ const HomeScreen = () => {
               >
                 <View
                   style={{
-                    borderRadius: 50,
+                    borderRadius: 60,
                     overflow: "hidden",
                     backgroundColor:
                       selectedCategory === category

@@ -18,9 +18,9 @@ const WelcomeScreen = () => {
           source={require("../../assets/lottie/food-logo.json")}
         />
       </View>
-      <StatusBar style='dark' />
+      <StatusBar style='light' />
       <View style={styles.textContainer}>
-        <Text style={styles.title}>Food Mart</Text>
+        <Text style={styles.title}>GroMart</Text>
         <Text style={styles.subtitle}>Explore some delicious food here</Text>
       </View>
       <TouchableOpacity
